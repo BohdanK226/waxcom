@@ -270,9 +270,51 @@ header .header-slider .owl-dot.active span {
     transition: .3s;
 }
 
-/*header .slide {*/
-    /*max-width: 200px;*/
-    /*background-color: black;*/
-    /*color: white;*/
-    /*font-size: 3em;*/
-/*}*/
+.what_we_do {
+    padding: 80px 0 60px 0;
+}
+
+.what_we_do .we_do {
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.what_we_do .we_do:after {
+    content: '';
+    display: block;
+    width: 70px;
+    height: 3px;
+    background-color: #f0ede9;
+    margin: 30px auto auto auto;
+}
+
+.what_we_do .we_do:hover:after {
+    background-color: #c0b099;
+}
+
+.what_we_do .we_do img {
+    height: 40px;
+    margin-bottom: 30px;
+}
+
+.what_we_do .we_do:hover img {
+    filter: brightness(160%) sepia(1)
+}
+
+.what_we_do .we_do:hover h3 {
+    color: #c0b099;
+}
+
+.what_we_do .we_do h3 {
+    font-family: RalewaySemiBold, Arial, sans-serif;
+    font-size: 2.2em;
+    color: #555555;
+    margin-bottom: 20px;
+}
+
+.what_we_do .we_do p {
+    font-family: Montserrat_Light, Arial, sans-serif;
+    font-size: 1.4em;
+    color: #8c8c8c;
+}

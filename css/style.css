@@ -318,3 +318,36 @@ header .header-slider .owl-dot.active span {
     font-size: 1.4em;
     color: #8c8c8c;
 }
+
+section.ideas .container {
+    max-width: 767px;
+}
+
+section.ideas {
+    text-align: center;
+    background-color: #fbfaf8;
+    padding: 80px 10px 0 10px;
+}
+
+section.ideas h3 {
+    font-family: RalewaySemiBold, Arial, sans-serif;
+    font-size: 3em;
+    color: #555555;
+    margin-bottom: 30px;
+}
+
+section.ideas p {
+    font-family: Montserrat_Light, Arial, sans-serif;
+    font-size: 1.6em;
+    color: #8c8c8c;
+    margin-bottom: 40px;
+}
+
+section.ideas .art_photo {
+    max-width: 1180px;
+    margin: auto;
+    background: url("../images/ideas_background.png") no-repeat bottom center;
+    background-size: contain;
+    height: 40vw;
+    max-height: 480px;
+}

@@ -203,6 +203,7 @@ header .header-slider p {
     margin-bottom: 50px;
 }
 
+.button,
 header .header-slider .button {
     font-family: RalewayExtraBold, Arial, sans-serif;
     font-size: 1.4em;
@@ -351,3 +352,40 @@ section.ideas .art_photo {
     height: 40vw;
     max-height: 480px;
 }
+
+.wordpress_theme {
+    background: linear-gradient(to right, #25211f, #47352b);
+    color: white;
+}
+
+.wordpress_theme .container {
+    padding: 45px 15px;
+}
+
+.left_side {
+    float: left;
+    max-width: 80%;
+}
+
+.wordpress_theme h3 {
+    font-family: Raleway_Regular, Arial, sans-serif;
+    font-size: 2.8em;
+    margin-bottom: 10px;
+}
+
+.wordpress_theme h3 span {
+    color: #c0b099;
+}
+
+.wordpress_theme p {
+    color: #5f5856;
+    font-family: Montserrat_Light, Arial, sans-serif;
+    font-size: 1.8em;
+}
+
+.wordpress_theme .button{
+    display: block;
+    float: right;
+    margin: 0;
+}
+

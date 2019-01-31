@@ -215,6 +215,11 @@ header .header-slider .button {
     border-radius: 3px;
     margin-bottom: 380px;
     display: inline-block;
+    color: white;
+}
+
+.button {
+    margin: auto;
 }
 
 header .header-slider .owl-nav button.owl-prev,
@@ -389,3 +394,178 @@ section.ideas .art_photo {
     margin: 0;
 }
 
+.latest_projects {
+    padding: 80px 10px;
+    text-align: center;
+}
+
+.latest_projects .container {
+    max-width: 1160px;
+}
+
+.latest_projects h2 {
+    text-align: center;
+    font-family: RalewaySemiBold, Arial, sans-serif;
+    font-size: 3em;
+    color: #555555;
+    margin-bottom: 30px;
+}
+
+.latest_projects .container > p {
+    font-family: Montserrat_Light, Arial, sans-serif;
+    font-size: 1.6em;
+    color: #8c8c8c;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.latest_projects .menu {
+    margin: auto auto 40px auto;
+    text-align: center;
+}
+
+.latest_projects .menu li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.latest_projects .menu a {
+    font-family: Montserrat_Light, Arial, sans-serif;
+    font-size: 1.4em;
+    color: #8c8c8c;
+    padding: 9px 17px;
+    border: 1px solid #ebebeb;
+    text-transform: capitalize;
+    border-radius: 5px;
+    display: block;
+}
+
+.latest_projects .item_card {
+    /*width: 370px;*/
+    margin-bottom: 30px;
+    position: relative;
+    text-align: left;
+}
+
+.latest_projects .item_card .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6) url("../images/lupa_link.png") no-repeat center center;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    display: none;
+    transition: .5s;
+}
+
+.latest_projects .item_card:hover .overlay {
+    display: block;
+}
+
+.latest_projects .item_card:hover .description{
+    background-color: #373331;
+}
+
+.latest_projects .item_card:hover h3 {
+    color: white;
+}
+
+.latest_projects .item_card:hover p {
+    color: #c0b099;
+}
+
+.latest_projects .menu a.active {
+    color: white;
+    background-color: #938575;
+}
+
+.latest_projects .item_card .background {
+    height: 240px;
+    background: no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+
+
+.latest_projects .description {
+    padding: 25px;
+    position: relative;
+    background-color: #fbfaf8;
+    transition: .5s;
+}
+
+.latest_projects .description:before {
+    content: '';
+    display: block;
+    border-top: 15px solid transparent;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid #fbfaf8;
+    position: absolute;
+    left: 20px;
+    top: -30px;
+    transition: .5s;
+}
+
+.latest_projects .item_card:hover .description:before {
+    border-bottom: 15px solid #373331;
+}
+
+.latest_projects .item_card h3 {
+    font-family: Raleway_Medium, Arial, sans-serif;
+    font-size: 2em;
+    color: #c0b199;
+    margin-bottom: 10px;
+}
+
+.latest_projects .item_card p {
+    font-family: Montserrat_Light, Arial, sans-serif;
+    font-size: 1.4em;
+    color: #d1d1d1;
+}
+
+.latest_projects .row {
+    margin-bottom: 35px;
+}
+
+.latest_projects .button {
+    color: white;
+}
+
+@media screen and (max-width: 767px) {
+    .latest_projects .item_card {
+        margin: auto auto 25px auto;
+        float: none;
+        max-width: 450px;
+    }
+
+    .latest_projects .menu a {
+        margin-bottom: 10px;
+    }
+
+    .latest_projects {
+        padding: 15px 0;
+    }
+
+    .wordpress_theme .left_side {
+        float: none;
+        text-align: center;
+        margin-bottom: 15px;
+        max-width: 100%;
+    }
+
+    .wordpress_theme .button{
+        float: none;
+        margin: auto;
+        clear: both;
+        text-align: center;
+        max-width: 60%;
+    }
+}
+
+@media screen and  (min-width: 576px){
+    .wordpress_theme .container {
+        width: 100%;
+    }
+}

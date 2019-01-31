@@ -533,6 +533,60 @@ section.ideas .art_photo {
     color: white;
 }
 
+.video-container {
+    position: relative;
+    width: 100%;
+    max-width: 1920px;
+    height: 700px;
+    overflow: hidden;
+}
+
+.video_pres {
+    position: relative;
+    height: 700px;
+}
+
+.video-container video {
+    /* Make video to at least 100% wide and tall */
+    min-width: 100%;
+    min-height: 100%;
+    /* Setting width & height to auto prevents the browser from stretching or squishing the video */
+    width: auto;
+    height: auto;
+    /* Center the video */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+}
+
+.video_pres .content {
+    max-width: 575px;
+    margin: 200px auto auto auto;
+    box-sizing: border-box;
+    text-align: center;
+    color: white;
+}
+
+.video_pres h2 {
+    font-family: Raleway_Medium, Arial, sans-serif;
+    font-size: 3em;
+    margin-bottom: 30px;
+}
+
+.video_pres p {
+    font-family: Montserrat_Light, Arial, sans-serif;
+    font-size: 1.6em;
+    margin-bottom: 40px;
+}
+
+.video_pres h5 {
+    font-family: Montserrat_Regular, Arial, sans-serif;
+    font-size: 1.4em;
+    color: #c0b099;
+}
+
 @media screen and (max-width: 767px) {
     .latest_projects .item_card {
         margin: auto auto 25px auto;

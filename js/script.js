@@ -18,4 +18,12 @@ $(document).ready(function () {
             $(this).addClass("active")
         }
     });
+    /// player conrtrol
+    $('#play-pause-button').click(function () {
+        if ($("#media-video").get(0).paused) {
+            $("#media-video").get(0).play();
+        } else {
+            $("#media-video").get(0).pause();
+        }
+    });
 });

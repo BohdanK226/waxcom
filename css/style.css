@@ -734,6 +734,139 @@ section.ideas .art_photo {
     left: 0;
 }
 
+.recent_posts .sizer {
+    max-width: 1160px;
+    padding: 80px 10px;
+    margin: auto;
+}
+
+.recent_posts h2,
+.recent_posts p {
+    text-align: center;
+    max-width: 768px;
+    margin: auto;
+}
+
+.recent_posts p {
+    font-family: Montserrat_Light, Arial, sans-serif;
+    font-size: 1.4em;
+    color: #8c8c8c;
+    text-align: center;
+    margin: auto auto 40px auto;
+    line-height: 1.8em;
+}
+
+.recent_posts h2,
+.recent_posts .post h2 {
+    font-family: RalewaySemiBold, Arial, sans-serif;
+    font-size: 3em;
+    color: #555555;
+    margin-bottom: 30px;
+}
+
+.recent_posts .post h2 {
+    font-size: 2em;
+    text-align: left;
+}
+
+.recent_posts .post p {
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.recent_posts .post_header {
+    height: 220px;
+    background: no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+
+.recent_posts .day_month {
+    position: absolute;
+    border-radius: 3px;
+    top: 20px;
+    left: 20px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.recent_posts .day_month .day {
+    background-color: #393939;
+    color: white;
+    font-family: Montserrat_Light, Arial, sans-serif;
+    font-size: 2.4em;
+    padding: 10px;
+}
+
+.recent_posts .day_month .month {
+    background-color: #292929;
+    font-family: Roboto_Regular, Arial, sans-serif;
+    font-size: 1.2em;
+    color: white;
+    padding: 5px 10px;
+}
+
+.recent_posts .post .read_more {
+    display: block;
+    float: left;
+    text-align: left;
+    font-family: Montserrat_Light, Arial, sans-serif;
+    font-size: 1.4em;
+    color: #c0b099;
+    position: relative;
+    padding-right: 40px;
+}
+
+.recent_posts .post .read_more:after {
+    content: '';
+    display: inline-block;
+    border-left: 7px solid #c0b099;
+    border-right: 7px solid transparent;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.recent_posts .post {
+    border: 1px solid #f8f8f8;
+}
+
+.recent_posts .post .content {
+    padding: 30px;
+}
+
+.recent_posts .posts_slider .owl-nav {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.recent_posts .posts_slider .owl-next,
+.recent_posts .posts_slider .owl-prev {
+    width: 20px;
+    height: 20px;
+    background: url("../images/nav_prev.png") no-repeat center center!important;
+    background-size: contain!important;
+    display: inline-block;
+    outline: 0;
+    margin: 0 4px;
+}
+
+.recent_posts .posts_slider .owl-next {
+    background: url("../images/nav_next.png") no-repeat center center!important;
+    background-size: contain!important;
+}
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 1024px) {
     .mobile_devices .bg_image {
         opacity: 0.2;
@@ -798,6 +931,19 @@ section.ideas .art_photo {
 
     .statistics li {
         margin: auto auto 15px auto;
+        padding: 0 10px;
+    }
+
+    .video_pres {
+        height: 500px;
+    }
+
+    .video_pres .video-container {
+        height: 500px;
+    }
+
+    .video_pres .content {
+        margin: 70px auto auto auto;
         padding: 0 10px;
     }
 }

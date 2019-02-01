@@ -1,6 +1,6 @@
 $(document).ready(function () {
     // initialize carousel and configure
-    $(".owl-carousel").owlCarousel({
+    $(".header-slider").owlCarousel({
             loop: true,
             margin: 10,
             nav: true,
@@ -44,6 +44,29 @@ $(document).ready(function () {
         //     "opacity":"1",
         //     "visibility":"visible"
         // });
-    })
+    });
+    //
+    $(".recent_posts .posts_slider").owlCarousel({
+            loop: true,
+            margin: 30,
+            nav: true,
+            items: 3,
+            mouseDrag: false,
+            smartSpeed: 1000,
+            dots: false,
+            navText: ["",""],
+            responsive: {
+                0: {
+                    items:1,
+                },
+                575:{
+                    items:2,
+                },
+                767:{
+                    items:3,
+                }
+            }
+        }
+    );
 });
 

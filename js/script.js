@@ -68,5 +68,14 @@ $(document).ready(function () {
             }
         }
     );
+    // mobile menu
+    $("header .mobile_menu_icon").click(function () {
+        $("header .main_menu").addClass("menu_show");
+        $("header").addClass('blur');
+    });
+    $("header .main_menu_close").click(function () {
+        $("header .main_menu").removeClass("menu_show");
+        $("header").removeClass('blur');
+    });
 });
 

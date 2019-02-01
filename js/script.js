@@ -77,5 +77,16 @@ $(document).ready(function () {
         $("header .main_menu").removeClass("menu_show");
         $("header").removeClass('blur');
     });
+
+    //*********** close mobile menu if window resize **********
+
+    $(window).resize(function(){
+        if (($("header .main_menu").hasClass('menu_show'))) {
+            $("header .main_menu").removeClass('menu_show');
+            $("header").removeClass('blur');
+        }
+        event.preventDefault();
+    });
+    
 });
 

@@ -18,12 +18,32 @@ $(document).ready(function () {
             $(this).addClass("active")
         }
     });
+
     /// player conrtrol
-    $('#play-pause-button').click(function () {
+
+
+    $('#play').click(function () {
         if ($("#media-video").get(0).paused) {
             $("#media-video").get(0).play();
-        } else {
-            $("#media-video").get(0).pause();
+            $(".video_pres .content").addClass("hide_cont").removeClass("show_cont");
+            // $(".video_pres .content").css({
+            //     "transition":"visibility 0s linear 2s, opacity 2s linear",
+            //     "opacity":"0",
+            //     "visibility":"hidden"
+            // });
+            $(".video_pres .pause_overlay").css("display","block");
         }
     });
+
+    $(".video_pres .pause_overlay").click(function () {
+        $("#media-video").get(0).pause();
+        $(".video_pres .pause_overlay").css("display","none");
+        $(".video_pres .content").removeClass("hide_cont").addClass("show_cont");
+        // $(".video_pres .content").css({
+        //     "transition":"visibility 0s linear 0s, opacity 2s linear",
+        //     "opacity":"1",
+        //     "visibility":"visible"
+        // });
+    })
 });
+

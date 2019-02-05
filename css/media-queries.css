@@ -52,6 +52,7 @@
 
     header .logo {
         transform: scale(0.7);
+        margin-left: -35px;
     }
 
     header nav {
@@ -167,6 +168,10 @@
 @media screen and (max-width: 575px) {
     .statistics {
         font-size: 7px;
+    }
+
+    header .icon_buttons {
+        margin: 15px 0 0 -20px;
     }
 
     .statistics ul {
